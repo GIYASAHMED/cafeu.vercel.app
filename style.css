@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
 li{
     list-style: none;
 }
@@ -25,7 +26,17 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 5rem;
+    padding: 15px 5rem;
+}
+nav{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+nav.sticky{
+    padding: 2px 0;
+    background: #fff;
 }
 
 .menu_item{
@@ -56,18 +67,17 @@ a{
 }
 
 .more_item{
-    opacity: 0;
     position: absolute;
     width: 220px;
     top: 40px;
     background: white;
+    display: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     /* padding: 10px 0; */
     border-top: 3px solid #c33;
-    transition: opacity 0.5s linear;
-    z-index: 999;
+    display: none;
 }
 .more_item li{
     border-bottom: 1px solid #f2f2f2;
@@ -88,8 +98,7 @@ a{
 }
 
 .menu_item li:hover .more_item{
-    opacity: 1;
-    transition: opacity 0.5s linear;
+    display: block;
 }
 
 .rotate {
@@ -109,9 +118,15 @@ a{
 .tel img{
     margin-right: 10px;
 }
+.menu_icon{
+    font-size: 32px;
+    display: none;
+}
 
-/* Navbar End */
-/* Swiper Start */
+/*============================== Navbar End ==================== */
+
+/*============================== Swiper start ==================== */
+
 .swiper {
     width: 100%;
     height: 100%;
@@ -126,6 +141,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 9%;
 }
 
 .content{
@@ -162,7 +178,6 @@ a{
     font-weight: 300;
     word-spacing: 2px;
 }
-
 
 .buttons{
     display: flex;
@@ -205,3 +220,189 @@ a{
     padding-right: 20px;
     color: #c33;
 }
+/*============================== Swiper section end ==================== */
+
+/*============================== Quality section start ==================== */
+
+#quality_section{
+    padding: 50px 0;
+}
+.quality_wrapper{
+    padding: 25px 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quality_wrapper .quality{
+    width: 24%;
+    border: 2px solid #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 30px;
+    row-gap: 25px;
+    transition: box-shadow 0.5s linear;
+}
+.quality_wrapper .quality:hover {
+    box-shadow: 0px 0px 5px #000;
+    transition: box-shadow 0.5s linear;
+}
+.quality_wrapper .quality:hover h3{
+    color: #c33;
+}
+.quality_wrapper .quality img{
+    width: 100px;
+}
+.quality_wrapper .quality h3{
+    font-size: 22px;
+}
+.quality_wrapper .quality p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+}
+.discover_btn{
+    width: 60%;
+    background: none;
+    border: none;
+    font-size: 16px;
+    position: relative;
+}
+.discover_btn::before{
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #000;
+    left: 0;
+    top: 25%;
+    transform: rotate(45deg);
+}
+.discover_btn::after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #000;
+    right: 0;
+    top: 25%;
+    transform: rotate(45deg);
+}
+.quality_wrapper .quality:hover .discover_btn{
+    color: #c33;
+}
+.quality_wrapper .quality:hover .discover_btn::after,
+.quality_wrapper .quality:hover .discover_btn::before {
+    opacity: 0.1;
+    transition: opacity 0.5s linear;
+}
+
+/*============================== email section start ==================== */
+#email_section{
+    padding: 50px 0;
+}
+.email_content{
+    width: 100%;
+    height: 40vh;
+    background-image: url("./images/backImg.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0000008a;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.email_text{
+    width: 50%;
+    color: #fff;
+    line-height: 35px;
+}
+.email_text h2{
+    font-size: 32px;
+}
+.email_input{
+    width: 45%;
+    background: red;
+    position: relative;
+}
+.email_input input{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    font-size: 22px;
+    padding: 0 10px;
+}
+.email_input input::placeholder{
+    font-size: 16px;
+    padding-left: 200px;
+}
+.email_btn{
+    position: absolute;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    cursor: pointer;
+    background-color: #c33;
+    border: none;
+}
+.email_btn i{
+    font-size: 22px;
+    color: #fff;
+}
+/*============================== email section end ==================== */
+
+/*============================== about us section start ==================== */
+#aboutus{
+    padding: 50px 0;
+}
+
+.aboutus_wrapper{
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about_us_content{
+    width: 45%;
+    padding: 10px 3rem;
+}
+.about_us_content span{
+    color: #c33;
+    font-size: 22px;
+}
+.about_us_content h2{
+    font-size: 35px;
+    margin: 10px 0 30px 0;
+}
+.about_us_content p{
+    font-weight: 200;
+    word-spacing: 2px;
+    line-height: 25px;
+}
+
+.service_booking{
+    margin-top: 40px;
+}
+
+.service{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.service img{
+    margin-right: 40px;
+}
+
+/*============================== About us section end ==================== */
