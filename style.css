@@ -60,17 +60,33 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10px;
+    /* padding: 10px 0; */
     border-top: 3px solid #c33;
+    transition: opacity 0.5s linear;
 }
 .more_item li{
     border-bottom: 1px solid #f2f2f2;
     padding: 12px 0;
     cursor: pointer;
     font-weight: 100;
+    margin: 0;
+}
+.more_item li a{
+    padding: 0 8px;
+    font-size: 16px;
+}
+.more_item li:hover{
+    background: rgb(218, 213, 213);
+}
+.more_item li a:hover {
+    color: #c33;
 }
 .rotate{
     font-size: 20px;
+}
+.menu_item li:hover .more_item{
+    opacity: 1;
+    transition: opacity 0.5s linear;
 }
 .menu_item li:hover .rotate{
     transform: rotate(180deg);
