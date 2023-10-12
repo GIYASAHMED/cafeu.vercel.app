@@ -8,55 +8,166 @@
     <link rel="stylesheet" href="style.css">
     <!-- icon link -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Swiper js  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 <body>
     <div id="main">
-            <nav>
-                <div class="wrapper">
-                    <div class="logo">
-                        <img src="https://cafeu.vercel.app/img/logo/logo.png" alt="">
-                    </div>
-                    <div class="menu">
-                        <ul class="menu_item">
-                            <li class="icon">
-                                <a href="#">Home</a>
-                                <div class="rotate">
-                                    <i class="ri-arrow-down-s-line"></i>
-                                </div> 
-                            
-                                <ul class="more_item">
-                                    <li><a href="#">Home 1</a></li>
-                                    <li><a href="#">Home 2</a></li>
-                                    <li><a href="#">Home 3</a></li>
-                                    <li><a href="#">Home 4</a></li>
-                                    <li><a href="#">Home 5</a></li>
-                                </ul>
-                            </li>
-
-
-
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Menu</a></li>
-                            <li class="icon"><a href="#">Blog</a> 
-                                <div class="rotate">
-                                    <i class="ri-arrow-down-s-line"></i>
-                                </div>
-                            </li>
-                            <li class="icon"><a href="#">Pages</a>
-                                <div class="rotate">
-                                    <i class="ri-arrow-down-s-line"></i>
-                                </div>
-                            </li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#"><i class="ri-search-line"></i></a></li>
-                            <li class="tel">
-                                <img src="images/call.png" alt="">
-                                <a href="tel:+880123456789">+880 123 456 789</a>
-                            </li>
-                        </ul>
-                    </div>
+        <nav>
+            <div class="wrapper">
+                <div class="logo">
+                    <img src="https://cafeu.vercel.app/img/logo/logo.png" alt="">
                 </div>
-            </nav>
+                <div class="menu">
+                    <ul class="menu_item">
+                        <li class="icon">
+                            <a href="#">Home</a>
+                            <div class="rotate">
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div> 
+                            
+                            <ul class="more_item">
+                                <li><a href="#">Home 1</a></li>
+                                <li><a href="#">Home 2</a></li>
+                                <li><a href="#">Home 3</a></li>
+                                <li><a href="#">Home 4</a></li>
+                                <li><a href="#">Home 5</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Menu</a></li>
+
+                        <li class="icon"><a href="#">Blog</a> 
+                            <div class="rotate">
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div>
+                            <ul class="more_item">
+                                <li><a href="#">Home 1</a></li>
+                                <li><a href="#">Home 2</a></li>
+                                <li><a href="#">Home 3</a></li>
+                                <li><a href="#">Home 4</a></li>
+                                <li><a href="#">Home 5</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="icon"><a href="#">Pages</a>
+                            <div class="rotate">
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div>
+
+                            <ul class="more_item">
+                                <li><a href="#">Home 1</a></li>
+                                <li><a href="#">Home 2</a></li>
+                                <li><a href="#">Home 3</a></li>
+                                <li><a href="#">Home 4</a></li>
+                                <li><a href="#">Home 5</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#"><i class="ri-search-line"></i></a></li>
+                        <li class="tel">
+                            <img src="images/call.png" alt="">
+                             <a href="tel:+880123456789">+880 123 456 789</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+        <!-- swiper start -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide content">
+                    <div class="swiper_content">
+                        <span>Best In Cafeu</span>
+                        <h1>Different <a href="#">Spice</a> For A </h1>
+                        <h1>Different Taste</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex sit itaque cumque rerum placeat expedita, consectetur soluta incidunt unde blanditiis minus officiis qui, voluptates impedit.</p>
+                        <div class="buttons">
+                            <button class="btn">Order Now</button>
+                            <i class="ri-play-circle-line"></i>
+                        </div> 
+                    </div>
+                    <div class="img_box">
+                        <img src="https://cafeu.vercel.app/img/slider/first-slider.png" alt="">
+                    </div>  
+                </div>
+
+                <div class="swiper-slide content">
+                    <div class="swiper_content">
+                        <span>Best In Cafeu</span>
+                        <h1>BBQ Chicken <a href="#">Salad</a></h1>
+                        <h1>With Creamy Avocado</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex sit itaque cumque rerum placeat expedita,
+                            consectetur soluta incidunt unde blanditiis minus officiis qui, voluptates impedit.</p>
+                        <div class="buttons">
+                            <button class="btn">Order Now</button>
+                            <i class="ri-play-circle-line"></i>
+                        </div>
+                    </div>
+                    <div class="img_box">
+                        <img src="https://cafeu.vercel.app/img/slider/baner.png" alt="">
+                    </div>
+                    
+                </div>
+
+                <div class="swiper-slide content">
+                    <div class="swiper_content">
+                        <span>Best In Cafeu</span>
+                        <h1>Asian Lettuce Wrap</h1>
+                        <h1><a href="#">Chicken</a>Chopped</h1>
+                        <h1>Salad</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex sit itaque cumque rerum placeat expedita,
+                            consectetur soluta incidunt unde blanditiis minus officiis qui, voluptates impedit.</p>
+                        <div class="buttons">
+                            <button class="btn">Order Now</button>
+                            <i class="ri-play-circle-line"></i>
+                        </div>
+                    </div>
+                    <div class="img_box">
+                        <img src="https://cafeu.vercel.app/img/slider/baner1.png" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="social_icon">
+            <i class="ri-facebook-circle-fill"></i>
+            <i class="ri-twitter-line"></i>
+            <i class="ri-instagram-line"></i>
+        </div>
     </div>
+
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+        <script>
+                var swiper = new Swiper(".mySwiper", {
+                    spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 3600,
+                disableOnInteraction: false,
+      },
+                pagination: {
+                    el: ".swiper-pagination",
+                clickable: true,
+      },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+      },
+    });
+      </script>
+    
 </body>
 </html>

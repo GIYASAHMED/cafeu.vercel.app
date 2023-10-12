@@ -15,16 +15,17 @@ a{
 
 #main{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     background-image: url(./images/banner.jpg);
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 .wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 3rem;
+    padding: 25px 5rem;
 }
 
 .menu_item{
@@ -43,6 +44,9 @@ a{
     font-size: 16px;
     font-weight: 200;
     cursor: pointer;
+}
+.menu_item li:hover a{
+    color: #c33;
 }
 .icon{
     display: flex;
@@ -63,6 +67,7 @@ a{
     /* padding: 10px 0; */
     border-top: 3px solid #c33;
     transition: opacity 0.5s linear;
+    z-index: 999;
 }
 .more_item li{
     border-bottom: 1px solid #f2f2f2;
@@ -81,12 +86,14 @@ a{
 .more_item li a:hover {
     color: #c33;
 }
-.rotate{
-    font-size: 20px;
-}
+
 .menu_item li:hover .more_item{
     opacity: 1;
     transition: opacity 0.5s linear;
+}
+
+.rotate {
+    font-size: 20px;
 }
 .menu_item li:hover .rotate{
     transform: rotate(180deg);
@@ -98,4 +105,103 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.tel img{
+    margin-right: 10px;
+}
+
+/* Navbar End */
+/* Swiper Start */
+.swiper {
+    width: 100%;
+    height: 100%;
+    /* margin-top: 5%; */
+}
+
+.swiper-slide {
+    /* height: 100vh; */
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 100%;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 5rem;
+}
+.swiper_content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.swiper_content span{
+    margin-bottom: 25px;
+    color: #c33;
+    font-weight: bold;
+}
+.swiper_content h1{
+    font-size: 3rem;
+}
+.swiper_content h1 a{
+    text-decoration: underline;
+    color: #c33;
+    margin: 0 10px;
+}
+.swiper_content p{
+    text-align: left;
+    padding: 35px 0;
+    font-weight: 300;
+    word-spacing: 2px;
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #c33;
+    border: none;
+    color: #fff;
+    margin-right: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buttons i{
+    font-size: 40px;
+    color: #c33;
+    cursor: pointer;
+}
+
+.img_box{
+    width: 45%;
+    height: 100%;
+}
+.img_box img{
+    width: 100%;
+}
+
+.social_icon{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    line-height: 50px;
+    padding-right: 20px;
+    color: #c33;
 }
