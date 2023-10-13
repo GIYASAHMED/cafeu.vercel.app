@@ -7,6 +7,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
+:root{
+    overflow-x: hidden;
+}
 li{
     list-style: none;
 }
@@ -22,21 +26,33 @@ a{
     background-position: center;
     position: relative;
 }
+nav {
+    width: 100%;
+    position: fixed;
+    right: 0;
+    z-index: 99;
+}
+
+.wrapper.sticky {
+    padding: 5px 5rem;
+    background: #fff;
+}
 .wrapper{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 5rem;
+    position: absolute;
 }
-nav{
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 9999;
+/* .logo{
+    width: 10%;
+} */
+.logo img{
+    width: 100%;
 }
-nav.sticky{
-    padding: 2px 0;
-    background: #fff;
+.menu{
+    width: 70%;
 }
 
 .menu_item{
@@ -119,8 +135,10 @@ nav.sticky{
     margin-right: 10px;
 }
 .menu_icon{
+    width: 10%;
     font-size: 32px;
     display: none;
+    text-align: right;
 }
 
 /*============================== Navbar End ==================== */
@@ -370,7 +388,12 @@ nav.sticky{
     justify-content: space-between;
     align-items: center;
 }
-
+.about_us_img{
+    width: 50%;
+}
+.about_us_img img{
+    width: 100%;
+}
 .about_us_content{
     width: 45%;
     padding: 10px 3rem;

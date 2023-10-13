@@ -3,6 +3,10 @@
     .wrapper {
         padding: 15px 2rem;
     }
+.wrapper.sticky {
+    padding: 5px 2rem;
+    background: #fff;
+}
 .menu_item {
     display: none;
 }
@@ -16,6 +20,9 @@
 }
 .swiper_content{
     width: 100%;
+}
+.swiper-slide{
+    margin-top: 15%;
 }
 .img_box{
     width: 100%;
@@ -51,6 +58,13 @@
     padding: 0;
     display: flex;
     flex-direction: column;
+}
+.about_us_img {
+    width: 100%;
+}
+
+.about_us_img img {
+    width: 100%;
 }
 .about_us_content {
     width: 100%;

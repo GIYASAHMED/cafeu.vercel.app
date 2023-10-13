@@ -1,5 +1,5 @@
 // onscroll navbar fixed 
 window.addEventListener("scroll", function () {
-    let navbar = document.querySelector('nav')
-    navbar.classList.toggle("sticky", window.scrollY > 0)
+    let navbar_wrapper = document.querySelector('.wrapper')
+    navbar_wrapper.classList.toggle("sticky", window.scrollY > 0)
 })
