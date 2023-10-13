@@ -39,6 +39,7 @@ nav {
     align-items: center;
     padding: 15px 5rem;
     position: absolute;
+    background: red;
 }
 /* .logo{
     width: 10%;
